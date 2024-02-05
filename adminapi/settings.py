@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['*']
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000', 'http://192.168.100.16:3000', "http://192.168.100.156:8081", 'http://0.0.0.0:8000',  'http://192.168.100.156',   'http://196.188.169.145',
+    'http://localhost:3000', 'http://165.22.216.109', "https://universalonlineuniversity.org", 'http://0.0.0.0:8000',  'http://192.168.100.156',   'http://196.188.169.145',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
