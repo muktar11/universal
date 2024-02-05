@@ -8,7 +8,7 @@ const Newsletter = () => {
 
   const handleSubscribe = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/Account/api/register/email", {
+      const response = await fetch("https://127.0.0.1:8000/Account/api/register/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
