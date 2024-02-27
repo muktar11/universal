@@ -25,10 +25,15 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Account/', include('Account.urls')),
-    re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
-    # Add a default route for the root path
-    path('', TemplateView.as_view(template_name='index.html'), name='home'),
+ 
+
+
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),  # Route for serving media files
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+# Route for serving index.html
+urlpatterns += [
+    re_path(r'^', TemplateView.as_view(template_name='index.html')),
+]
