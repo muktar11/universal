@@ -35,7 +35,7 @@ export default class SignUp extends Component {
     console.log(formData)
     try {
       // Make the API request using fetch
-      const response = await fetch('http://127.0.0.1:8000/Account/api/register/', {
+      const response = await fetch('https://127.0.0.1:8000/Account/api/register/', {
         headers: {
             'Content-Type': 'application/json',
         },
